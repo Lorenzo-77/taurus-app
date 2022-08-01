@@ -1,0 +1,34 @@
+<main class="container p-5">
+<div class="col-md-4 mx-auto">
+    <div class="card text-center">
+    <div class="card-header">
+        <h3>Nueva Rutina</h3>
+    </div>
+    <div class="card-body">
+        <form action="/notes/new-note" method="post">
+        <div class="input-group mb-3">
+            <input type="text" name="title" class="form-control" placeholder="Rutina" autofocus required>
+        </div>
+
+
+        <div class="input-group mb-3">
+            <input type="url" name="image" class="form-control" placeholder="http://website.com " required>
+        </div>
+
+        
+        <div class="input-group mb-3">
+            <textarea type="text" name="description" class="form-control" placeholder="WOD" rows="6" required></textarea>
+        </div>
+
+          <div class="input-group mb-3">
+            Color de texto: <input type="color" name="color" class="form-control" value="#FFFFFF" required>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" type="submit">
+                Guardar
+            </button>
+        </div>
+        </form>
+    </div>
+</div>
+</div></main>
