@@ -4,7 +4,7 @@ const router = Router();
 const { renderIndex, renderAbout,renderNoteFrom, createNewNote,renderEditFrom, 
     updateNote, deleteNote } = require('../controllers/index.controller');
 
-//const {isAuthenticated} = require('../helpers/auth');
+
 
 router.get('/',renderIndex);
 router.get('/about/:id', renderAbout);
