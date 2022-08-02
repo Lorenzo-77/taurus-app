@@ -12,7 +12,7 @@ var _require2 = require('../controllers/index.controller'),
     createNewNote = _require2.createNewNote,
     renderEditFrom = _require2.renderEditFrom,
     updateNote = _require2.updateNote,
-    deleteNote = _require2.deleteNote; //const {isAuthenticated} = require('../helpers/auth');
+    deleteNote = _require2.deleteNote; 
 
 
 router.get('/', renderIndex);
