@@ -1,7 +1,10 @@
 "use strict";
 
-require('dotenv').config();
+//require('dotenv').config();
 
+/*import { config } from "dotenv";
+
+config();*/
 var app = require('./server');
 
 require('./database');

@@ -1,9 +1,12 @@
 "use strict";
 
+var _dotenv = require("dotenv");
+
 var mongoose = require('mongoose');
 
-var RUTINA_APP_MONGODB_DATABASE = process.env.RUTINA_APP_MONGODB_DATABASE;
-var MONGODB_URL = RUTINA_APP_MONGODB_DATABASE; //const MONGODB_URL = `mongodb://localhost/${RUTINA_APP_MONGODB_DATABASE}`;
+(0, _dotenv.config)(); //const { RUTINA_APP_MONGODB_DATABASE } = process.env;
+
+var MONGODB_URL = process.env.MONGODB_URI; //RUTINA_APP_MONGODB_DATABASE;
 
 mongoose.connect(MONGODB_URL, {
   useUnifiedTopology: true,

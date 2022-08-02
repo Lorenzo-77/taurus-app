@@ -1,8 +1,13 @@
 const mongoose = require('mongoose');
 
-const { RUTINA_APP_MONGODB_DATABASE } = process.env;
+import { config } from "dotenv";
 
-const MONGODB_URL = RUTINA_APP_MONGODB_DATABASE;
+config();
+
+//const { RUTINA_APP_MONGODB_DATABASE } = process.env;
+
+const MONGODB_URL = process.env.MONGODB_URI ;
+//RUTINA_APP_MONGODB_DATABASE;
 
 
 mongoose.connect(MONGODB_URL, {
