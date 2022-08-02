@@ -1,17 +1,11 @@
 "use strict";
 
-//require('dotenv').config();
-
-/*import { config } from "dotenv";
-
-config();*/
 var app = require('./server');
 
-require('./database');
+require('./database'); //const createAdminUser = require('./libs/createUser');
 
-var createAdminUser = require('./libs/createUser');
 
 app.listen(app.get('port'), function () {
-  createAdminUser();
+  //createAdminUser();
   console.log('Server ON port', app.get('port'));
 });

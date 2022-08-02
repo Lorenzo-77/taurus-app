@@ -4,13 +4,13 @@ const router = Router();
 const { renderIndex, renderAbout,renderNoteFrom, createNewNote,renderEditFrom, 
     updateNote, deleteNote } = require('../controllers/index.controller');
 
-const {isAuthenticated} = require('../helpers/auth');
+//const {isAuthenticated} = require('../helpers/auth');
 
-router.get('/', isAuthenticated,renderIndex);
-router.get('/about/:id',isAuthenticated, renderAbout);
+router.get('/',renderIndex);
+router.get('/about/:id', renderAbout);
 
-router.get('/wod/add',isAuthenticated, renderNoteFrom);
-router.post('/notes/new-note',isAuthenticated, createNewNote);
+router.get('/wod/add', renderNoteFrom);
+router.post('/notes/new-note', createNewNote);
 
 router.get('/wod/edit/:id', renderEditFrom);
 router.put('/notes/edit/:id', updateNote);

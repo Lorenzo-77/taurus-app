@@ -12,15 +12,13 @@ var _require2 = require('../controllers/index.controller'),
     createNewNote = _require2.createNewNote,
     renderEditFrom = _require2.renderEditFrom,
     updateNote = _require2.updateNote,
-    deleteNote = _require2.deleteNote;
+    deleteNote = _require2.deleteNote; //const {isAuthenticated} = require('../helpers/auth');
 
-var _require3 = require('../helpers/auth'),
-    isAuthenticated = _require3.isAuthenticated;
 
-router.get('/', isAuthenticated, renderIndex);
-router.get('/about/:id', isAuthenticated, renderAbout);
-router.get('/wod/add', isAuthenticated, renderNoteFrom);
-router.post('/notes/new-note', isAuthenticated, createNewNote);
+router.get('/', renderIndex);
+router.get('/about/:id', renderAbout);
+router.get('/wod/add', renderNoteFrom);
+router.post('/notes/new-note', createNewNote);
 router.get('/wod/edit/:id', renderEditFrom);
 router.put('/notes/edit/:id', updateNote);
 router["delete"]('/notes/delete/:id', deleteNote);
