@@ -1,4 +1,7 @@
-require('dotenv').config();
+//require('dotenv').config();
+import { config } from "dotenv";
+
+config();
 
 const app = require('./server');
 require('./database');
