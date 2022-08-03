@@ -1,9 +1,13 @@
 <style>
 
 .contenedor img{
-   width:  1920px;
-   height: 1080px;
+   /*width: 1347px;
+   height: 768px;*/
+   width: 1280px;
+   height: 720px;*
 }
+
+
 nav{
    visibility: hidden;
 }
@@ -19,7 +23,14 @@ nav{
 .contenedor h2{
     color: {{notes.color}};
 
+} 
+@media screen and(max-width: 1920px){
+   .contenedor img{
+      width:  1920px;
+      height: 1080px;
+   }
 }
+  
 
 </style>
 <div  id="completo">
