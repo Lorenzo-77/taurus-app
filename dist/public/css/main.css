@@ -29,15 +29,9 @@ body{
 
 .contenedor img{
     filter: brightness(35%);
-    /*width: 300px;
-    height: 150px;*/
+    width: 300px;
+    height: 200px;
 }
-
-/*.contenedor h6{
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -o-pre-wrap;
-}*/
 
 .contenedor h2{
     font-size: 60px;
@@ -58,4 +52,17 @@ body{
 #completo {
     position: relative;
     top: -88px;
+  }
+
+
+  @media screen and (max-width: 1024px){
+    .contenedor img{
+        width: 160px;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    .contenedor img{
+        width: 240px;
+    }
   }
